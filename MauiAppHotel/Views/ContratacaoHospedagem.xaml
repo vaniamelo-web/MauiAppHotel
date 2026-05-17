@@ -4,13 +4,13 @@
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="#C19570">
+             BackgroundColor="#D6D3F0">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="12" Spacing="20">
-        <Button Text="Sobre" BackgroundColor="#7A4314" HorizontalOptions="Start" Clicked="Button_Clicked"/>
+        <Button Text="Sobre" BackgroundColor="#0F5257" HorizontalOptions="Start" Clicked="Button_Clicked"/>
         <Label 
-            Text="🌟 Hotel Estrelar " FontFamily="Allura" FontSize="60" TextColor="#EBEBDF" HorizontalTextAlignment="Center"/>
-        <Border Padding="10" Stroke="#7A4314" StrokeThickness="1">
+            Text="🌟 Hotel Estrelar " FontFamily="Allura" FontSize="60" TextColor="#0F5257" HorizontalTextAlignment="Center"/>
+        <Border Padding="10" Stroke="#0F5257" StrokeThickness="1">
             
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="7"/>
@@ -18,43 +18,43 @@
             
             <VerticalStackLayout Spacing="20">
                 <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *, 2*" RowSpacing="10">
-                    <Label Grid.Row="0" Grid.ColumnSpan="3" Text="Faça sua reserva:" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
-                    <Label Grid.Row="1" Grid.Column="0" TextColor ="#EBEBDF" Text="Adultos:"/>
-                    <Label Grid.Row="1" Grid.Column="1" TextColor="#7A4314" Text="{Binding Value}" BindingContext="{x:Reference stp_adultos}"/>
-                    <Stepper Grid.Row="1" Grid.Column="2" x:Name ="stp_adultos" Minimum="0" Maximum="10" Increment="1" BackgroundColor="#EBEBDF"/>
+                    <Label Grid.Row="0" Grid.ColumnSpan="3" Text="Faça sua reserva:" HorizontalTextAlignment="Center" TextColor ="#0F5257" FontSize="25" FontFamily="VarelaRound"/>
+                    <Label Grid.Row="1" Grid.Column="0" TextColor ="#0F5257" Text="Adultos:"/>
+                    <Label Grid.Row="1" Grid.Column="1" TextColor="#0B3142" Text="{Binding Value}" BindingContext="{x:Reference stp_adultos}"/>
+                    <Stepper Grid.Row="1" Grid.Column="2" x:Name ="stp_adultos" Minimum="0" Maximum="10" Increment="1" BackgroundColor="#C6B9CD"/>
 
-                    <Label Grid.Row="2" Grid.Column="0" TextColor ="#EBEBDF" Text="Crianças:"/>
-                    <Label Grid.Row="2" Grid.Column="1" TextColor="#7A4314" Text="{Binding Value}" BindingContext="{x:Reference stp_criancas}"/>
-                    <Stepper Grid.Row="2" Grid.Column="2" x:Name ="stp_criancas" Minimum="0" Maximum="10" Increment="1" BackgroundColor="#EBEBDF"/>
+                    <Label Grid.Row="2" Grid.Column="0" TextColor ="#0F5257" Text="Crianças:"/>
+                    <Label Grid.Row="2" Grid.Column="1" TextColor="#0B3142" Text="{Binding Value}" BindingContext="{x:Reference stp_criancas}"/>
+                    <Stepper Grid.Row="2" Grid.Column="2" x:Name ="stp_criancas" Minimum="0" Maximum="10" Increment="1" BackgroundColor="#C6B9CD"/>
                     
                 </Grid>
 
-                <Label Text="Escolha sua Suíte" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
-                <Picker x:Name="pck_quarto" Title="Selecione sua Acomodação:" TextColor="#EBEBDF" TitleColor="#7A4314" BackgroundColor="#C19570"/>
+                <Label Text="Escolha sua Suíte" HorizontalTextAlignment="Center" TextColor ="#0F5257" FontSize="25" FontFamily="VarelaRound"/>
+                <Picker x:Name="pck_quarto" Title="Selecione sua Acomodação:" TextColor="#0F5257" TitleColor="#0B3142" BackgroundColor="#D6D3F0"/>
 
-                <Border Padding="10" Stroke="#7A4314" StrokeThickness="1" Margin="10">
+                <Border Padding="10" Stroke="#0B3142" StrokeThickness="1" Margin="10">
 
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="7"/>
                     </Border.StrokeShape>
 
                     <VerticalStackLayout Spacing="10">
-                        <Label Text="Período da Estadia" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
+                        <Label Text="Período da Estadia" HorizontalTextAlignment="Center" TextColor ="#0F5257" FontSize="25" FontFamily="VarelaRound"/>
                         
                         <HorizontalStackLayout Spacing="20">
-                            <Label Text="Check-in: " TextColor="#EBEBDF" VerticalTextAlignment="Center"/>
-                            <DatePicker x:Name="dtpck_checkin" Format="dd/mm/yyyy" TextColor="#7A4314"/>
+                            <Label Text="Check-in: " TextColor="#0F5257" VerticalTextAlignment="Center"/>
+                            <DatePicker x:Name="dtpck_checkin" Format="dd/mm/yyyy" TextColor="#0B3142"/>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout Spacing="10">
-                            <Label Text="Check-out: " TextColor="#EBEBDF" VerticalTextAlignment="Center"/>
-                            <DatePicker x:Name="dtpck_checkout" Format="dd/mm/yyyy" TextColor="#7A4314"/>
+                            <Label Text="Check-out: " TextColor="#0F5257" VerticalTextAlignment="Center"/>
+                            <DatePicker x:Name="dtpck_checkout" Format="dd/mm/yyyy" TextColor="#0F5257"/>
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
                 </Border>
 
-                <Button Text="Avançar" BackgroundColor="#7A4314"/>
+                <Button Text="Avançar" BackgroundColor="#0F5257"/>
 
             </VerticalStackLayout>
                 
