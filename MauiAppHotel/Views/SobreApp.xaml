@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreApp"
+             Title="SobreApp"  
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#C19570">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="12" Spacing="20">
+        <Label 
+         Text="📱 Desenvolvido por: " FontFamily="Allura" FontSize="60" TextColor="#EBEBDF" HorizontalTextAlignment="Center"/>
+        <Border Padding="10" Stroke="#7A4314" StrokeThickness="1">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="7"/>
+            </Border.StrokeShape>
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Vania Melo" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
+                <Label Text="Email: vaniamelo@teste.com" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
+                <Label Text="Desenvolvido em .Net MAUI" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
+                <Label Text="© 2026 Hotel Estelar" HorizontalTextAlignment="Center" TextColor ="#EBEBDF" FontSize="25" FontFamily="VarelaRound"/>
+            </VerticalStackLayout>
+        </Border>
+        <Button Text="Voltar" BackgroundColor="#7A4314" HorizontalOptions="Start" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
