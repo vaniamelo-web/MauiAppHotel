@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Inicio"
+             Title="Inicio"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#d3cdef">
+    <VerticalStackLayout Padding="12" Spacing="20">
+        <Button Text="Sobre" BackgroundColor="#0F5257" HorizontalOptions="Start" Clicked="Button_Clicked" FontFamily="VarelaRound"/>
+        <Image Source="logohotel.png" HeightRequest="300"/>
+        <Grid RowDefinitions="Auto" ColumnDefinitions="*, *" RowSpacing="10" ColumnSpacing="10">
+            <Button Grid.Row="0" Grid.Column="0" Text="Suítes" BackgroundColor="#0F5257" FontFamily="VarelaRound" Clicked="Button_Clicked_1"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="Endereço" BackgroundColor="#0F5257" FontFamily="VarelaRound" Clicked="Button_Clicked_2"/>
+            </Grid>
+        <Button Text="Faça sua reserva" BackgroundColor="#0F5257" FontFamily="VarelaRound" Clicked="Button_Clicked_3"/>
+            
+    </VerticalStackLayout>
+</ContentPage>

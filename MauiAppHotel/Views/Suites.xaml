@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Suites"
+             Title="Suites"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#d3cdef">
+    <ScrollView>
+        <VerticalStackLayout Padding="12" Spacing="20">
+            <Image Source="logohotel.png" HeightRequest="200"/>
+            <Label Text="Suíte 5 Estrelas" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#0F5257" FontSize="35" FontFamily="VarelaRound"/>
+            <Image Source="suite_5estrelas.png" HeightRequest="300"/>
+            <Label Text="Suíte 4 Estrelas" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#0F5257" FontSize="35" FontFamily="VarelaRound"/>
+            <Image Source="suite_4estrelas.png" HeightRequest="300"/>
+            <Label Text="Suíte 3 Estrelas" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#0F5257" FontSize="35" FontFamily="VarelaRound"/>
+            <Image Source="suite_3estrelas.png" HeightRequest="300"/>
+            <Label Text="Suíte 2 Estrelas" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#0F5257" FontSize="35" FontFamily="VarelaRound"/>
+            <Image Source="suite_2estrelas.png" HeightRequest="300"/>
+            <Label Text="Suíte 1 Estrela" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#0F5257" FontSize="35" FontFamily="VarelaRound"/>
+            <Image Source="suite_1estrela.png" HeightRequest="300"/>
+
+            <Button Text="Voltar" BackgroundColor="#0F5257" HorizontalOptions="Start" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

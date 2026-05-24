@@ -2,11 +2,65 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#D6D3F0">
+
+    <VerticalStackLayout Padding="12" Spacing="10">
+        <Image Source="logohotel.png" HeightRequest="120" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label Text="Suíte Super Luxo" TextColor="#0F5257" FontSize="50" FontFamily="VarelaRound" HorizontalTextAlignment="Center"/>
+
+        <Border Padding="20" Stroke="#0B3142" StrokeThickness="1" Margin="10">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="7"/>
+            </Border.StrokeShape>
+            
+            <HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Adultos:" TextColor="#0F5257" FontFamily="VarelaRound"/>
+                    <Label Text=" 2" TextColor="#0F5257" FontFamily="VarelaRound"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="  Crianças: " TextColor="#0F5257" FontFamily="VarelaRound"/>
+                    <Label Text=" 1" TextColor="#0F5257" FontFamily="VarelaRound"/>
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>            
+        </Border>
+
+        <Border Padding="20" Stroke="#0B3142" StrokeThickness="1" Margin="10">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="7"/>
+            </Border.StrokeShape>
+
+            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *" RowSpacing="10">
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in: " TextColor="#0F5257" FontFamily="VarelaRound"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out: " TextColor="#0F5257" FontFamily="VarelaRound"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia: " TextColor="#0F5257" FontFamily="VarelaRound"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="23/05/2026" TextColor="#0F5257" FontFamily="VarelaRound"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="24/05/2026" TextColor="#0F5257" FontFamily="VarelaRound"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="1" TextColor="#0F5257" FontFamily="VarelaRound"/>
+
+            </Grid>
+        </Border>
+
+        <Border Padding="20" Stroke="#0B3142" StrokeThickness="1" Margin="10">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="7"/>
+            </Border.StrokeShape>
+
+            <HorizontalStackLayout>
+                <Label Text="Valor Total: " TextColor="#0F5257" FontFamily="VarelaRound"/>
+                <Label Text="R$ 240,00" TextColor="#0F5257" FontFamily="VarelaRound"/>
+            </HorizontalStackLayout>
+            
+        </Border>
+
+        <Button Text="Voltar" BackgroundColor="#0F5257" Clicked="Button_Clicked" HorizontalOptions="Start"/>
+        
     </VerticalStackLayout>
 </ContentPage>

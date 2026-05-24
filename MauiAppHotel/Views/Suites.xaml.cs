@@ -1,8 +1,8 @@
 namespace MauiAppHotel.Views;
 
-public partial class HospedagemContratada : ContentPage
+public partial class Suites : ContentPage
 {
-	public HospedagemContratada()
+	public Suites()
 	{
 		InitializeComponent();
 	}
